@@ -1,0 +1,47 @@
+body {
+  color: #444;
+  margin: 50px 0px 50px 0px;
+}
+h1, h2 {
+  text-align: center;
+}
+h1, h3 {
+  margin-top: 40px;
+}
+h2 {
+  margin-top: 20px;
+}
+h3 {
+  border-bottom: 1px #ddd dotted;
+  padding-bottom: 10px;
+}
+h4 {
+  margin-top: 50px;
+}
+p {
+  line-height: 1em;
+}
+.container {
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 5px 5px 2px 1px rgba(127, 127, 127, .2);
+}
+.avatar img {
+  border-radius: 100px;
+  height: 150px;
+}
+i {
+  color: rgb(175, 0, 0);
+}
+.tech {
+  font-weight: bold;
+  color: #222;
+  border-top: 1px dotted #ddd;
+  margin-top: 10px;
+  padding-top: 10px;
+  list-style-type: none;
+}
+#w3c {
+ text-align: center; 
+}
