@@ -1,25 +1,35 @@
 body {
   color: #444;
   margin: 50px 0px 50px 0px;
+  line-height: 1.5em;
+}
+h1 {
+  font-size: 30px;
+  margin-top: 20px;
 }
 h1, h2 {
   text-align: center;
 }
-h1, h3 {
+h3 {
   margin-top: 40px;
 }
 h2 {
+  font-size: 24px;
   margin-top: 20px;
 }
 h3 {
+  font-size: 20px;
   border-bottom: 1px #ddd dotted;
   padding-bottom: 10px;
 }
-h4 {
-  margin-top: 50px;
+h3 i {
+  color: rgb(175, 0, 0);
 }
-p {
-  line-height: 1em;
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
 }
 .container {
   padding: 20px;
@@ -29,10 +39,16 @@ p {
 }
 .avatar img {
   border-radius: 100px;
-  height: 150px;
+  max-width: 100px;
 }
-i {
-  color: rgb(175, 0, 0);
+.skills ul {
+  list-style-type: none;
+}
+.dates {
+  border-right: 1px solid #ddd;
+}
+.position {
+  padding: 10px;
 }
 .tech {
   font-weight: bold;
@@ -42,6 +58,26 @@ i {
   padding-top: 10px;
   list-style-type: none;
 }
-#w3c {
- text-align: center; 
+
+@media (min-width: 992px) {
+  
+  .avatar img {
+    max-width: 200px !important;
+  }
+  
+}
+
+@media print {
+  
+  body {
+    margin: 0px;
+  }
+  
+  .container {
+    padding: 0px !important;
+    border: none;
+    border-radius: 0px;
+    box-shadow: none;
+  }
+  
 }
