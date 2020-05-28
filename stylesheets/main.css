@@ -1,10 +1,11 @@
 body {
+  background-color: #f0f0f0;
   color: #444;
-  margin: 50px 0px 50px 0px;
+  margin: 0px;
   line-height: 1.5em;
 }
 h1 {
-  font-size: 30px;
+  font-size: 28px;
   margin-top: 20px;
 }
 h1, h2 {
@@ -24,39 +25,39 @@ h3 {
 }
 h3 i {
   color: rgb(175, 0, 0);
+  margin-right: 5px;
 }
 h4 {
   font-size: 18px;
 }
 h5 {
   font-size: 16px;
+  margin-bottom: 20px;
+}
+ul {
+  padding-inline-start: 20px;
 }
 .container {
+  background-color: #fff;
   padding: 20px;
-  border: 1px solid #ddd;
-  border-radius: 10px;
-  box-shadow: 5px 5px 2px 1px rgba(127, 127, 127, .2);
 }
 .avatar img {
   border-radius: 100px;
-  max-width: 100px;
+  max-width: 75px;
 }
 .skills ul {
   list-style-type: none;
 }
-.dates {
-  border-right: 1px solid #ddd;
-}
 .position {
   padding: 10px;
+  border-bottom: 1px #ddd dotted;
+  margin-bottom: 20px;
 }
 .tech {
-  font-weight: bold;
   color: #222;
   border-top: 1px dotted #ddd;
   margin-top: 10px;
   padding-top: 10px;
-  list-style-type: none;
 }
 
 @media (min-width: 992px) {
@@ -64,13 +65,30 @@ h5 {
   .avatar img {
     max-width: 200px !important;
   }
+  .position .dates h4 {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    text-align: center;
+  }
+  .position.odd .dates {
+    border-right: 1px dotted #ddd;
+  }
+  .position.even .dates {
+    border-left: 1px dotted #ddd;
+  }
   
 }
 
 @media print {
   
   body {
+    -webkit-print-color-adjust: exact !important;
     margin: 0px;
+  }
+  
+  .avatar img {
+    display: none;
   }
   
   .container {
@@ -78,6 +96,34 @@ h5 {
     border: none;
     border-radius: 0px;
     box-shadow: none;
+  }
+  
+  .position {
+    margin-bottom: 10px;
+    border-bottom: none;
+  }
+  
+  .position .dates h4 {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    text-align: center;
+  }
+  
+  .position.odd {
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+  }
+  
+  .position.odd .dates {
+    border-right: 1px dotted #ddd;
+  }
+  .position.even .dates {
+    border-left: 1px dotted #ddd;
+  }
+  
+  .tech {
+    padding: 5px 0px 0px 5px;
   }
   
 }

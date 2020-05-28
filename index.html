@@ -13,8 +13,14 @@
   <link href='//fonts.googleapis.com/css?family=Droid+Sans:400' rel='stylesheet' type='text/css' />
   <link rel="stylesheet" href="stylesheets/main.css" />
   
+  <script type="text/javascript" src="javascripts/jquery-3.5.1.min.js"></script>
   <script type="text/javascript" src="https://kit.fontawesome.com/d037a77bc5.js"></script>
-
+  
+  <script type="text/javascript">
+  $(document).ready(function() {
+    $('.tech').addClass('alert alert-primary');
+  });
+  </script>
 </head>
 
 <body>
@@ -42,46 +48,46 @@
 
   <h3><i class="fas fa-graduation-cap"></i> Formation sup&eacute;rieure</h3>
 
-  <p>MASTER 2 NTIE Nouvelles Technologies de l’Informatique pour l’Entreprise.</p>
-  <p>Universit&eacute; Toulouse II Le Mirail (2008).</p>
+  <p>MASTER 2 N.T.I.E. Nouvelles Technologies de l’Informatique pour l’Entreprise - Universit&eacute; Toulouse II Le Mirail (2008).</p>
 
   <h3><i class="fas fa-laptop-code"></i> Comp&eacute;tences</h3>
   
-  <div class="skills row">
-    <div class="col-3">
-      <ul>
-        <li>Langages</li>
-        <li>Frameworks</li>
-        <li>Front</li>
-        <li>SQL</li>
-        <li>Versioning</li>
-       <li> Autres</li>
-      </ul>
+  <div class="skills">
+    <div class="row">
+      <div class="col-3">Langages</div>
+      <div class="col-9">Ruby (2.4.x), Java, PHP, Javascript.</div>
     </div>
-    <div class="col-9">
-      <ul>
-        <li>Ruby (2.4.x), Java, PHP, Javascript.</li>
-        <li>Rails 5 &amp; ActionCable, JSF &amp; PrimeFaces, Struts 2, Hibernate, CakePHP, Node.js.</li>
-        <li>HTML5 / CSS3, Bootstrap.</li>
-        <li>MySQL.</li>
-        <li>Git, SVN.</li>
-        <li>Apache2, Docker, API REST, MVC, POO.</li>
-      </ul>
+    <div class="row">
+      <div class="col-3">Frameworks</div>
+      <div class="col-9">Rails 5 &amp; ActionCable, JSF &amp; PrimeFaces, Struts 2, Hibernate, CakePHP, Node.js.</div>
+    </div>
+    <div class="row">
+      <div class="col-3">Front</div>
+      <div class="col-9">HTML5 / CSS3, Bootstrap.</div>
+    </div>
+    <div class="row">
+      <div class="col-3">SQL</div>
+      <div class="col-9">MySQL.</div>
+    </div>
+    <div class="row">
+      <div class="col-3">Versioning</div>
+      <div class="col-9">Git, SVN.</div>
+    </div>
+    <div class="row">
+      <div class="col-3">Autres</div>
+      <div class="col-9">Capistrano, Apache2, Docker, API REST, Web sémantique (RDF, OWL, SPARQL), POO.</div>
     </div>
   </div>
 
   <h3><i class="fas fa-briefcase"></i> Exp&eacute;riences professionnelles</h3>
   
-  <div class="position row">
-    
-    <div class="col-sm-3 col-xs-12 dates text-center">
+  <div class="position row odd">
+    <div class="col-sm-3 col-12 dates">
       <h4>03/2017 - 02/2020</h4>
     </div>
-    
-    <div class="col-sm-9 col-xs-12 details">
-      <h4>Nuxos Publishing Technologies</h4>
-      <h5>T&eacute;l&eacute;travail 100% (CDI)</h5>
-      <h5>D&eacute;veloppeur Ruby/Ruby on Rails (CDI)</h5>
+    <div class="col-sm-9 col-12 details">
+      <h4>Nuxos Publishing Technologies - t&eacute;l&eacute;travail 100%</h4>
+      <h5>D&eacute;veloppeur Ruby/Ruby on Rails - CDI</h5>
       <ul>
         <li>R&eacute;&eacute;criture d'une application de e-commerce (vente de livres papier et num&eacute;riques).</li>
         <li>Migration de Ruby 1.8.7 à Ruby 2.4.3 et de Rails 2.3.17 à Rails 5.0.6.</li>
@@ -100,17 +106,12 @@
       </ul>
       <p class="tech">Ruby 2.4.3, Rails 5.0.6, ActionCable, Elasticsearch (via le gem Searchkick), MySQL, Apache 2/Passenger, MacOS et Docker (d&eacute;veloppement), Ubuntu (production).</p>
     </div>
-    
   </div>
   
-  <div class="position row">
-    <div class="col-sm-3 col-xs-12 dates text-center">
-      <h4>09/2016 – 12/2016</h4>
-    </div>
-    <div class="col-sm-9 col-xs-12 details">
-      <h4>Isodom – Saint-Denis, R&eacute;union (CDD de 3 mois)</h4>
-      <h5>Saint-Denis, R&eacute;union</h5>
-      <h5>Ing&eacute;nieur Java/J2EE (CDD de 3 mois)</h5>
+  <div class="position row even">
+    <div class="col-sm-9 col-12 details">
+      <h4>Isodom – Saint-Denis, R&eacute;union - Saint-Denis, R&eacute;union</h4>
+      <h5>Ing&eacute;nieur Java/J2EE - CDD de 3 mois</h5>
       <ul>
         <li>Mission en renfort chez Orange R&eacute;union.</li>
         <li>D&eacute;veloppements &eacute;volutifs sur 2 applications p&eacute;riph&eacute;riques au SI.</li>
@@ -119,97 +120,168 @@
       </ul>
       <p class="tech">Java/J2EE, Spring, Eclipse, Microsoft Dynamics CRM, HP Quality Center.</p>
     </div>
+    <div class="col-sm-3 col-12 dates">
+      <h4>09/2016 – 12/2016</h4>
+    </div>
   </div>
   
-  <h4>09/2015 – 06/2016 Ing&eacute;nieur Java/J2EE – Pyramid Informatique – Grabels (CDI)</h4>
-
-  <ul>
-  <li>Refactoring et &eacute;volution d’une application web connect&eacute;e via des web services à une application de gestion de production alimentaire (h&ocirc;pitaux, collectivit&eacute;s, cuisines centrales) :</li>
-  <li>Refonte globale (architecture SQL, h&eacute;ritage objet).</li>
-  <li>Impl&eacute;mentation « multi-tenancy » Hibernate (1 base SQL par client) avec un m&eacute;canisme de cr&eacute;ation automatique de base de donn&eacute;es pour les nouveaux clients.</li>
-  <li>Factorisation, nettoyage et simplification du code, am&eacute;lioration des performances, r&eacute;duction des temps de r&eacute;ponse.</li>
-  <li>Cr&eacute;ation de nouveaux modules dans l’application : messagerie interne, notation des prestations, g&eacute;n&eacute;ration de statistiques graphiques, &eacute;crans d’administration, etc.</li>
-  <li>Cr&eacute;ation et d&eacute;veloppement d’une application web de gestion de planning :</li>
-  <li>Mise en commun de packages et ressources avec la première application.</li>
-  <li>Saisie des tâches à r&eacute;aliser par collaborateur sur un planning.</li>
-  <li>Calcul du plan de charge sur une p&eacute;riode donn&eacute;e avec export vers Excel.</li>
-  <li>G&eacute;n&eacute;ration de statistiques graphiques.</li>
-  <li>Suivi et impl&eacute;mentation des demandes des clients.</li>
-  <li>Gestion et suivi des versions (correctives, &eacute;volutives), gestion des d&eacute;ploiements.</li>
-  <li>D&eacute;veloppement en totale autonomie (choix et initiatives techniques, interactions client, cr&eacute;ation et gestion des tickets et tâches à r&eacute;aliser).</li>
-  <li class="tech">Java/J2EE, JSF 2.2, PrimeFaces 5.2, Hibernate, EJB, JBoss 7.1.1, Ant, MySQL, Phabricator.</li>
-  </ul>
-
-  <h4>10/2014 – 08/2015 D&eacute;veloppeur PHP - William Reed Business Media – Montpellier (CDI)</h4>
-
-  <ul>
-  <li>Interfaçage de donn&eacute;es entre applications (Google Analytics, Adobe Campaign, eZ Publish, FormSite) à l’aide de scripts PHP (lecture XML, communication SOAP).</li>
-  <li>Traitement de demandes par script (exports de donn&eacute;es, suppressions massives, etc).</li>
-  <li>Prise en charge et traitement des tickets de maintenance en &eacute;troite relation avec le support bas&eacute; en Angleterre.</li>
-  <li>Int&eacute;gration d’am&eacute;liorations techniques et/ou fonctionnelles sur les sites web &eacute;dit&eacute;s par la soci&eacute;t&eacute; (balisage Schema.org, nouveaux modules int&eacute;gr&eacute;s dans la navigation, refonte graphique, etc).</li>
-  <li class="tech">PHP, CMS eZ Publish, Adobe Campaign (Neolane), FormSite, MySQL, NetBeans, Git.</li>
-  </ul>
-
-  <h4>06/2012 – 09/2014 D&eacute;veloppeur PHP - Apside (CDI)</h4>
-  <ul>
-  <li>Mission de 2 ans en assistance technique chez Orange (site de Montpellier) :</li>
-  <li>maintenance corrective et &eacute;volutive d'un deviseur impl&eacute;mentant diverses offres commerciales class&eacute;es par domaine (t&eacute;l&eacute;phonie, voix, mobilit&eacute;, relation client, ...).</li>
-  <li>refactoring, am&eacute;lioration des performances, nettoyage du code, et prise en charge de nombreux d&eacute;veloppements &eacute;volutifs sur le domaine principal de l'application (vente de standards t&eacute;l&eacute;phoniques PABX, environ 60% des ventes)</li>
-  <li class="tech">PHP, CakePHP, ZendStudio, jQuery, CSS, SVN (Zend &amp; Tortoise), MySQL, Soap, Scrum.</li>
-  </ul>
-
-  <h4>09/2011 – 05/2012 D&eacute;veloppeur J2EE - Cirrus Informatique – Saint-Paul, R&eacute;union (CDD de 8 mois)</h4>
-  <ul>
-  <li>Participation au d&eacute;veloppement d'une application g&eacute;rant l’enregistrement des passagers sur borne interactive pour des compagnies a&eacute;riennes.</li>
-  <li class="tech">Java/J2EE, Eclipse, Hibernate, Struts 1, Tomcat, log4j, Ant, CSS, Oracle, SVN.</li>
-  </ul>
-
-  <h4>12/2009 – 09/2011 D&eacute;veloppeur PHP/Java - Digitalvox – Saint-Denis, R&eacute;union (CDI)</h4>
-  <ul>
-  <li>D&eacute;veloppement d'applications et de sites web, r&eacute;daction de sp&eacute;cifications et de contrats d’interface, gestion d'emailings.</li>
-  <li>Gestion d’h&eacute;bergements mutualis&eacute;s et d&eacute;di&eacute;s OVH.</li>
-  <li>Java/J2EE, Eclipse, Hibernate, Struts 2, Tomcat, log4j.</li>
-  <li class="tech">PHP 5, WordPress, JavaScript, Ajax, JQuery, XML, HTML, CSS, MySQL 5, CVS.</li>
-  </ul>
-
-  <h4>10/2009 - 02/2010 Formateur vacataire - Chambre de Commerce et de l'Industrie de la R&eacute;union</h4>
-  <p>Intervention sur un module d&eacute;di&eacute; aux systèmes d'informations (24h de cours) dans une classe d'&eacute;tudiants comptables : g&eacute;n&eacute;ralit&eacute;s SI, mod&eacute;lisation Merise, bases de donn&eacute;es (TP MS Access).</p>
-
-  <h4>09/2008 – 08/2009 Ing&eacute;nieur Java/J2EE - N&eacute;o-Soft – Toulouse (CDI)</h4>
-  <p>Mission en assistance technique chez France T&eacute;l&eacute;com.</p>
-  <ul>
-  <li>Int&eacute;gration au sein de l'&eacute;quipe de d&eacute;veloppement du portail Orange TV (TV par ADSL).</li>
-  <li>Analyse et correction des bugs, d&eacute;veloppement des &eacute;volutions fonctionnelles et techniques.</li>
-  <li class="tech">Java , Eclipse, Struts 1, JavaScript, Jonas, XML, GWT, CVS, Ant, m&eacute;thode agile Scrum.</li>
-  </ul>
-
-  <h4>08/2006 – 08/2008 Ing&eacute;nieur Java/J2EE - Homsys – Toulouse</h4>
-  <p>Contrat d’apprentissage (ann&eacute;es universitaires M1 et M2 N.T.I.E.). Conception et d&eacute;veloppement d'applications pour des besoins internes.</p>
-  <ul>
-  <li class="tech">Java, truts, Hibernate, Tomcat, OpenCMS, Axis, WSDL, MySQL, XHTML, CSS, UML.</li>
-  <li class="tech">.NET, Visual Studio 2005, C#, Windows Workflow Foundation, UML.</li>
-  </ul>
-
+  <div class="position row odd">
+    <div class="col-sm-3 col-12 dates">
+      <h4>09/2015 – 06/2016</h4>
+    </div>
+    <div class="col-sm-9 col-12 details">
+      <h4>Pyramid Informatique – Grabels</h4>
+      <h5>Ing&eacute;nieur Java/J2EE – Pyramid Informatique – CDI</h5>
+      <ul>
+        <li>Refactoring et &eacute;volution d’une application web connect&eacute;e via des web services à une application de gestion de production alimentaire (h&ocirc;pitaux, collectivit&eacute;s, cuisines centrales) :</li>
+        <li>Refonte globale (architecture SQL, h&eacute;ritage objet).</li>
+        <li>Impl&eacute;mentation « multi-tenancy » Hibernate (1 base SQL par client) avec un m&eacute;canisme de cr&eacute;ation automatique de base de donn&eacute;es pour les nouveaux clients.</li>
+        <li>Factorisation, nettoyage et simplification du code, am&eacute;lioration des performances, r&eacute;duction des temps de r&eacute;ponse.</li>
+        <li>Cr&eacute;ation de nouveaux modules dans l’application : messagerie interne, notation des prestations, g&eacute;n&eacute;ration de statistiques graphiques, &eacute;crans d’administration, etc.</li>
+        <li>Cr&eacute;ation et d&eacute;veloppement d’une application web de gestion de planning :</li>
+        <li>Mise en commun de packages et ressources avec la première application.</li>
+        <li>Saisie des tâches à r&eacute;aliser par collaborateur sur un planning.</li>
+        <li>Calcul du plan de charge sur une p&eacute;riode donn&eacute;e avec export vers Excel.</li>
+        <li>G&eacute;n&eacute;ration de statistiques graphiques.</li>
+        <li>Suivi et impl&eacute;mentation des demandes des clients.</li>
+        <li>Gestion et suivi des versions (correctives, &eacute;volutives), gestion des d&eacute;ploiements.</li>
+        <li>D&eacute;veloppement en totale autonomie (choix et initiatives techniques, interactions client, cr&eacute;ation et gestion des tickets et tâches à r&eacute;aliser).</li>
+      </ul>
+      <p class="tech">Java/J2EE, JSF 2.2, PrimeFaces 5.2, Hibernate, EJB, JBoss 7.1.1, Ant, MySQL, Phabricator.</p>
+    </div>
+  </div>
+  
+  <div class="position row even">
+    <div class="col-sm-9 col-12 details">
+      <h4>William Reed Business Media – Montpellier</h4>
+      <h5>D&eacute;veloppeur web | PHP – CDI</h5>
+      <ul>
+        <li>Interfaçage de donn&eacute;es entre applications (Google Analytics, Adobe Campaign, eZ Publish, FormSite) à l’aide de scripts PHP (lecture XML, communication SOAP).</li>
+        <li>Traitement de demandes par script (exports de donn&eacute;es, suppressions massives, etc).</li>
+        <li>Prise en charge et traitement des tickets de maintenance en &eacute;troite relation avec le support bas&eacute; en Angleterre.</li>
+        <li>Int&eacute;gration d’am&eacute;liorations techniques et/ou fonctionnelles sur les sites web &eacute;dit&eacute;s par la soci&eacute;t&eacute; (balisage Schema.org, nouveaux modules int&eacute;gr&eacute;s dans la navigation, refonte graphique, etc).</li>
+      </ul>
+      <p class="tech">PHP, CMS eZ Publish, Adobe Campaign (Neolane), FormSite, MySQL, NetBeans, Git.</p>
+    </div>
+    <div class="col-sm-3 col-12 dates">
+      <h4>10/2014 – 08/2015</h4>
+    </div>
+  </div>
+  
+  <div class="position row odd">
+    <div class="col-sm-3 col-12 dates">
+      <h4>06/2012 – 09/2014</h4>
+    </div>
+    <div class="col-sm-9 col-12 details">
+      <h4>Apside  Toulouse</h4>
+      <h5>Ingénieur d'études web - CDI</h5>
+      <ul>
+        <li>Mission de 2 ans en assistance technique chez Orange (site de Montpellier) :</li>
+        <li>maintenance corrective et &eacute;volutive d'un deviseur impl&eacute;mentant diverses offres commerciales class&eacute;es par domaine (t&eacute;l&eacute;phonie, voix, mobilit&eacute;, relation client, ...).</li>
+        <li>refactoring, am&eacute;lioration des performances, nettoyage du code, et prise en charge de nombreux d&eacute;veloppements &eacute;volutifs sur le domaine principal de l'application (vente de standards t&eacute;l&eacute;phoniques PABX, environ 60% des ventes)</li>
+      </ul>
+      <p class="tech">PHP, CakePHP, ZendStudio, jQuery, CSS, SVN (Zend &amp; Tortoise), MySQL, Soap, Scrum.</p>
+    </div>
+  </div>
+  
+  <div class="position row even">
+    <div class="col-sm-9 col-12 details">
+      <h4>Cirrus Informatique – Saint-Paul, R&eacute;union</h4>
+      <h5>Ingénieur Java/J2EE - CDD de 8 mois</h5>
+      <ul>
+        <li>Participation au d&eacute;veloppement d'une application g&eacute;rant l’enregistrement des passagers sur borne interactive pour des compagnies a&eacute;riennes.</li>
+      </ul>
+      <p class="tech">Java/J2EE, Eclipse, Hibernate, Struts 1, Tomcat, log4j, Ant, CSS, Oracle, SVN.</p>
+    </div>
+    <div class="col-sm-3 col-12 dates">
+      <h4>09/2011 – 05/2012</h4>
+    </div>
+  </div>
+  
+  <div class="position row odd">
+    <div class="col-sm-3 col-12 dates">
+      <h4>12/2009 – 09/2011</h4>
+    </div>
+    <div class="col-sm-9 col-12 details">
+      <h4>Digitalvox – Saint-Denis, R&eacute;union</h4>
+      <h5>D&eacute;veloppeur web | PHP/Java - CDI</h5>
+      <ul>
+        <li>D&eacute;veloppement d'applications et de sites web, r&eacute;daction de sp&eacute;cifications et de contrats d’interface, gestion d'emailings.</li>
+        <li>Gestion d’h&eacute;bergements mutualis&eacute;s et d&eacute;di&eacute;s OVH.</li>
+        <li>Java/J2EE, Eclipse, Hibernate, Struts 2, Tomcat, log4j.</li>
+      </ul>
+      <p class="tech">PHP 5, WordPress, JavaScript, Ajax, JQuery, XML, HTML, CSS, MySQL 5, CVS.</p>
+    </div>
+  </div>
+  
+  <div class="position row even">
+    <div class="col-sm-9 col-12 details">
+      <h4>Chambre de Commerce et de l'Industrie de la R&eacute;union</h4>
+      <h5>Formateur vacataire</h5>
+      <p>Intervention sur un module d&eacute;di&eacute; aux systèmes d'informations (24h de cours) dans une classe d'&eacute;tudiants comptables : g&eacute;n&eacute;ralit&eacute;s SI, mod&eacute;lisation Merise, bases de donn&eacute;es (TP MS Access).</p>
+    </div>
+    <div class="col-sm-3 col-12 dates">
+      <h4>10/2009 - 02/2010</h4>
+    </div>
+  </div>
+  
+  <div class="position row odd">
+    <div class="col-sm-3 col-12 dates">
+      <h4>09/2008 - 08/2009</h4>
+    </div>
+    <div class="col-sm-9 col-12 details">
+      <h4>N&eacute;o-Soft – Toulouse</h4>
+      <h4>Ing&eacute;nieur Java/J2EE - CDI</h4>
+      <p>Mission en assistance technique chez France T&eacute;l&eacute;com.</p>
+      <ul>
+        <li>Int&eacute;gration au sein de l'&eacute;quipe de d&eacute;veloppement du portail Orange TV (TV par ADSL).</li>
+        <li>Analyse et correction des bugs, d&eacute;veloppement des &eacute;volutions fonctionnelles et techniques.</li>
+      </ul>
+      <p class="tech">Java , Eclipse, Struts 1, JavaScript, Jonas, XML, GWT, CVS, Ant, m&eacute;thode agile Scrum.</p>
+    </div>
+  </div>
+  
+  <div class="position row even">
+    <div class="col-sm-9 col-12 details">
+      <h4>Homsys – Toulouse</h4>
+      <h4>Ing&eacute;nieur Java/J2EE</h4>
+      <ul>
+        <li>Contrat d’apprentissage (ann&eacute;es universitaires M1 et M2 N.T.I.E.).</li>
+        <li>Conception et d&eacute;veloppement d'applications pour des besoins internes.</li>
+      </ul>
+      <p class="tech">Java, truts, Hibernate, Tomcat, OpenCMS, Axis, WSDL, MySQL, XHTML, CSS, UML, .NET, Visual Studio 2005, C#, Windows Workflow Foundation, UML.</p>
+    </div>
+    <div class="col-sm-3 col-12 dates">
+      <h4>08/2006 – 08/2008</h4>
+    </div>
+  </div>
+  
   <h3><i class="fas fa-language"></i> Langues</h3>
-  <ul>
-    <li>Français : langue maternelle.</li>
-    <li>Anglais : lu, &eacute;crit, parl&eacute; (TOEIC 750 points).</li>
-  </ul>
-
-  <h3><i class="fas fa-dice-six"></i> Loisirs &amp; informations diverses</h3>
-  <ul>
-    <li>Musique (pratique &amp; &eacute;coute).</li>
-    <li>Voyage</li>
-    <li>Lecture</li>
-    <li>Jeux de soci&eacute;t&eacute;</li>
-    <li>Sport (badminton).</li>
-  </ul>
-
-  <h3><i class="fas fa-info-circle"></i> Divers</h3>
-  <ul>
-    <li>Permis B.</li>
-  </ul>
-
+  <div class="langs">
+    <ul>
+      <li>Français : langue maternelle.</li>
+      <li>Anglais : lu, &eacute;crit, parl&eacute; (TOEIC 750 points).</li>
+    </ul>
+  </div>
+  
+  <div class="hobbies">
+    <h3><i class="fas fa-dice-six"></i> Loisirs</h3>
+    <ul>
+      <li>Musique (pratique &amp; &eacute;coute).</li>
+      <li>Voyage</li>
+      <li>Jeux de soci&eacute;t&eacute;</li>
+      <li>Lecture</li>
+      <li>Sport (badminton).</li>
+    </ul>
+  </div>
+  
+  <div class="misc">
+    <h3><i class="fas fa-info-circle"></i> Divers</h3>
+    <ul>
+      <li>Permis B.</li>
+    </ul>
+  </div>
+  
   <p id="w3c" class="text-center d-print-none">
     <a href="http://validator.w3.org/check?uri=referer">
       <img src="http://www.w3.org/Icons/valid-xhtml10" alt="Valid XHTML 1.0 Strict" height="31" width="88" />
