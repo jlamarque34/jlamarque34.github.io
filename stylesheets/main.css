@@ -1,8 +1,11 @@
 body {
-  background-color: #f0f0f0;
+  background-color: rgba(0, 0, 0, 0.1);
   color: #444;
   margin: 0px;
   line-height: 1.5em;
+}
+i {
+  margin-right: 5px;
 }
 h1 {
   font-size: 28px;
@@ -20,12 +23,8 @@ h2 {
 }
 h3 {
   font-size: 20px;
-  border-bottom: 1px #ddd dotted;
+  border-bottom: 1px #ddd solid;
   padding-bottom: 10px;
-}
-h3 i {
-  color: rgb(175, 0, 0);
-  margin-right: 5px;
 }
 h4 {
   font-size: 18px;
@@ -41,6 +40,10 @@ ul {
   background-color: #fff;
   padding: 20px;
 }
+.identity i {
+  font-size: 14px;
+  color: #999;
+}
 .avatar img {
   border-radius: 100px;
   max-width: 75px;
@@ -50,14 +53,24 @@ ul {
 }
 .position {
   padding: 10px;
-  border-bottom: 1px #ddd dotted;
+  border-bottom: 1px #ddd solid;
+  margin-bottom: 20px;
+}
+.position:last-child {
+  border: none;
+}
+.position .dates {
   margin-bottom: 20px;
 }
 .tech {
   color: #222;
-  border-top: 1px dotted #ddd;
+  border-top: 1px solid #ddd;
   margin-top: 10px;
   padding-top: 10px;
+  text-align: center;
+}
+.tech i {
+  margin-right: 5px;
 }
 
 @media (min-width: 992px) {
@@ -71,11 +84,8 @@ ul {
     top: 50%;
     text-align: center;
   }
-  .position.odd .dates {
-    border-right: 1px dotted #ddd;
-  }
-  .position.even .dates {
-    border-left: 1px dotted #ddd;
+  .position .dates {
+    border-right: 1px solid #ddd;
   }
   
 }
@@ -99,7 +109,7 @@ ul {
   }
   
   .position {
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     border-bottom: none;
   }
   
@@ -110,20 +120,12 @@ ul {
     text-align: center;
   }
   
-  .position.odd {
-    background-color: rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
-  }
-  
-  .position.odd .dates {
-    border-right: 1px dotted #ddd;
-  }
-  .position.even .dates {
-    border-left: 1px dotted #ddd;
+  .position .dates {
+    border-right: 1px solid #ddd;
   }
   
   .tech {
-    padding: 5px 0px 0px 5px;
+    padding: 5px;
   }
   
 }
